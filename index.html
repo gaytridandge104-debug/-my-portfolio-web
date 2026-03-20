@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- VIDEO BACKGROUND -->
+<video autoplay muted loop class="bg-video">
+  <source src="15255984_1920_1080_30fps.mp4" type="video/mp4">
+</video>
+
+<!-- DARK OVERLAY -->
+<div class="overlay"></div>
+
+<!-- BUBBLES BACKGROUND -->
+<div class="bubbles">
+  <span></span><span></span><span>
+    
+  </span><span></span>
+  <span></span><span></span><span></span>  <span></span><span></span><span></span><span></span>
+  <span></span><span></span><span></span>
+  <span></span><span></span><span></span><span></span>
+  <span></span><span></span><span></span>
+  <span></span><span></span><span></span><span></span>
+  <span></span><span></span><span></span>
+
+</div>
+
+<!-- NAVBAR -->
+<header>
+  <nav>
+    
+    <h1 class="logo">Portfolio</h1>
+
+    <ul id="nav-links">
+      <li><a href="#home"> home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#modules">Modules</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+     
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h2>Hello, I'm <span>Gayatri  Dandge </span></h2>
+    <p id="typing"></p>
+    <p>Hi! I’m Gayatri, an Electronics and Communication Engineering (ECE) enthusiast with a passion for Robotics, AI/ML, Embedded Systems, and IoT. </p><br>
+      <p>I love exploring how hardware and software can come together to create smart, innovative solutions.</p><br>
+<p>I enjoy designing and building projects that solve real-world problems while continuously learning about emerging technologies. Whether it’s programming intelligent systems,
+   developing IoT devices, or experimenting with robotics, I’m always eager to challenge myself and bring</p>
+    <a href="#about">
+     <button class="start-bnt" onclick="startEffect()">start </button>
+     <div class="reaction"></div>
+    </a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="abm">
+  <DIV class="box">
+
+  <div><h3>About me</h3> </div><br>
+    
+  <p> </p>
+  </DIV>
+</section>
+
+<!-- RESUME -->
+<section id="resume" >
+  <h2>Resume</h2>
+  <a href="resume.pdf" download>
+    <button>Download Resume</button>
+  </a>
+</section>
+
+<!-- MODULES -->
+<section id="modules" >
+  <h2>Modules of fablap</h2>
+  <h3> get to know about fablab and it`s module</h3>
+  <p>FabLab is a place where you can make and build projects. 
+  Used for learning, creating, and testing ideas.</p>
+
+  <div class="grid">
+    <div class="card" onclick="expandCard(this)"
+     data-title="Web Development"
+     data-desc="Learn HTML, CSS, JavaScript and build real-world projects."
+     data-img="https://www.moople.in/blog/wp-content/uploads/2025/02/Top-8-Reasons-for-Learning-Web-Development.jpg"
+
+ style="width:300px;
+  height:200px;
+  background-image:url('https://www.moople.in/blog/wp-content/uploads/2025/02/Top-8-Reasons-for-Learning-Web-Development.jpg');
+  background-size:cover;
+  background-position:center;
+"><h2> web development</h2><p>Creating modern,user friendly web
+      experiences using HTML,CSS,and Javascript
+    </p></div>
+    <div class="card" onclick="expandCard(this)"
+     data-title="CAD"
+     data-desc="CAD is used to design and model components digitally."
+     data-img="https://cadd.net.in/cadd/uploads/2024/12/AdvantagesofSolidworksOverAutoca-1.jpeg"
+
+style="
+  width:300px;
+  height:200px;
+  background-image:url('https://cadd.net.in/cadd/uploads/2024/12/AdvantagesofSolidworksOverAutoca-1.jpeg');
+  background-size:cover;
+  background-position:center;
+">
+ ><h2>CAD</h2><p>CAD is used to design and model components digitally.</p></div>
+    <div class="card"onclick="expandCard(this)"
+     data-title="Laser cutting"
+     data-desc="Enables high accuracy, efficiency, and clean finishing in design and prototyping"
+     data-img="https://www.komaspec.com/media/gwelpsl3/laser-cutting-2.jpg?width=500&height=333.33333333333337"
+
+ style="
+  width:300px;
+  height:200px;
+  background-image:url('https://www.komaspec.com/media/gwelpsl3/laser-cutting-2.jpg?width=500&height=333.33333333333337');
+  background-size:cover;
+  background-position:center;
+">
+><h2>Laser cutting</h2><p>Enables high accuracy, efficiency, and clean finishing in design and prototyping.</p></div>
+    <div class="card" onclick="expandCard(this)"
+     data-title="IoT & Embedded system"
+     data-desc="Integrates hardware and software for real-time data processing and automation"
+     data-img="https://ipcsglobal.com/wp-content/uploads/2025/11/2149174320.jpg"
+
+ style="
+  width:300px;
+  height:200px;
+  background-image:url('https://ipcsglobal.com/wp-content/uploads/2025/11/2149174320.jpg');
+  background-size:cover;
+  background-position:center;
+">
+><h2>IoT & Embedded system</h2><p>Integrates hardware and software for real-time data processing and automation</p></div>
+    <div class="card" onclick="expandCard(this)"
+     data-title="Java"
+     data-desc="Enables development of scalable, secure, and high-performance software"
+     data-img="https://learn.microsoft.com/en-us/azure/developer/java/get-started/media/visual-studio-code-deploy.jpg"
+
+ style="
+  width:300px;
+  height:200px;
+  background-image:url('https://learn.microsoft.com/en-us/azure/developer/java/get-started/media/visual-studio-code-deploy.jpg');
+  background-size:cover;
+  background-position:center;
+">
+><h2>Java</h2><p>Enables development of scalable, secure, and high-performance software</p></div>
+    <div class="card" onclick="expandCard(this)"
+     data-title="Networking"
+     data-desc="Focuses on secure, reliable, and high-speed information exchange."
+     data-img="https://framerusercontent.com/images/YuiLKxXR9nW12Ot07l69HaTZZCQ.png"
+
+ style="
+  width:300px;
+  height:200px;
+  background-image:url('https://framerusercontent.com/images/YuiLKxXR9nW12Ot07l69HaTZZCQ.png');
+  background-size:cover;
+  background-position:center;
+">
+><h2>Networking</h2><p>Focuses on secure, reliable, and high-speed information exchange.</p></div>
+    <div class="card" onclick="expandCard(this)"
+     data-title="Ai/Ml"
+     data-desc="Enables automation, prediction, and data-driven decision making."
+     data-img="https://boomi.com/wp-content/uploads/seo-blogwhat-is-ai-ml.jpg"
+
+ style="
+  width:300px;
+  height:200px;
+  background-image:url('https://boomi.com/wp-content/uploads/seo-blogwhat-is-ai-ml.jpg');
+  background-size:cover;
+  background-position:center;
+">
+<h2>Ai/Ml</h2><p>Enables automation, prediction, and data-driven decision making.</p></div>
+    <div class="card" onclick="expandCard(this)"
+     data-title="PCB design"
+     data-desc="creating efficient layouts for electronic circuits."
+     data-img="https://etteplan.b-cdn.net/2024/01/PCB-scaled-aspect-ratio-5-3-2048x1229.jpg?width=2048&quality=60"
+
+ style="
+  width:300px;
+  height:200px;
+  background-image:url('https://etteplan.b-cdn.net/2024/01/PCB-scaled-aspect-ratio-5-3-2048x1229.jpg?width=2048&quality=60');
+  background-size:cover;
+  background-position:center;
+">
+><h2> PCB design</h2><p>creating efficient layouts for electronic circuits.</p></div>
+    <div class="card" onclick="expandCard(this)"
+     data-title="ul/ux design"
+     data-desc="Combines usability with modern interface design for better interaction."
+     data-img="https://img.freepik.com/free-vector/gradient-ui-ux-elements-background_23-2149056159.jpg?semt=ais_hybrid&w=740&q=80"
+
+ style="
+  width:300px;
+  height:200px;
+  background-image:url('https://img.freepik.com/free-vector/gradient-ui-ux-elements-background_23-2149056159.jpg?semt=ais_hybrid&w=740&q=80');
+  background-size:cover;
+  background-position:center;
+">
+><h2  style="color: rgb(222, 240, 234);">ul/ux design</h2><p>Combines usability with modern interface design for better interaction.</p></div>
+    
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+  <input type="text" placeholder="Your Name">
+  <input type="email" placeholder="Your Email">
+  <textarea placeholder="Message"></textarea>
+  <button >Send</button>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Your Name</p>
+  <div class="socials">
+    <a href="#">Instagram</a>
+    <a href="#">LinkedIn</a>
+    <a href="#">GitHub</a>
+  </div>
+</footer>
+
+<div id="expand-view" class="expand-view">
+  <span class="close" onclick="closeExpand()">&times;</span>
+
+  <img id="expand-img">
+  <h2 id="expand-title"></h2>
+  <p id="expand-desc"></p>
+</div>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
